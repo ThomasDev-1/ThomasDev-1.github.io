@@ -1,116 +1,113 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>ThomasDev - Game Launcher</title>
-		<style>
-			body {
-				height: 100%;
-				background-image: url("images/background.jpg");
-				margin: 0;
-				padding: 0;
-				font-family: Arial, sans-serif;
-			}
-			
-			header {
-				background-color: #333;
-				color: white;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 10px;
-			}
-			
-			header h1 {
-				margin: 0;
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			}
-			
-			header button {
-				background-color: #4CAF50;
-				border: none;
-				color: white;
-				padding: 10px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				margin: 4px 2px;
-				cursor: pointer;
-			}
-			
-			.container {
-				max-width: 800px;
-				margin: auto;
-				padding: 20px;
-			}
-			
-			h2 {
-				font-size: 36px;
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-				text-align: center;
-				margin-bottom: 20px;
-			}
-			
-			p {
-				font-size: 20px;
-				margin-bottom: 20px;
-				line-height: 1.5;
-				text-align: justify;
-			}
-			
-			a {
-				color: blue;
-				text-decoration: none;
-				font-weight: bold;
-			}
-			
-			a:hover {
-				text-decoration: underline;
-			}
-			
-			img {
-				display: block;
-				margin: auto;
-				max-width: 100%;
-			}
-			
-			button {
-			background-color: #007bff;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			font-size: 18px;
-			cursor: pointer;
-			margin-right: 10px;
-			margin-bottom: 20px;
-			transition: all 0.3s ease-in-out;
-			}
-			button:hover {
-				background-color: #388E3C;
-				transform: translateY(-5px);
-			}
-			
-			button:focus {
-				outline: none;
-			}
-		
-		</style>
-	</head>
-	<body>
-		<header>
-			<h1></h1>
-			<h1>ThomasDev - Game Launcher</h1>
-			<div>
-				<button onclick="window.location.href='index.html'">Home</button>
-				<button onclick="window.location.href='myprograms.html'">Back</button>
-			</div>
-		</header>
-		<div class="container">
-			<h2>Delphi Game Launcher</h2>
-			<p>This is a Game Launcher that was made using Delphi 10.4 <br/> You can download the installer file <a href="https://github.com/ThomasDev-1/DelphiGameLauncher/raw/main/Delphi-Game-Launcher-SETUP.exe" target="_blank">here</a>, or get the full source code <a href="https://github.com/ThomasDev-1/DelphiGameLauncher/archive/refs/heads/main.zip" target="_blank">here</a>.</p>
-			<center><img src="images/launcher.png" alt="Screenshot of Delphi Flappy Bird"></center>
-			<p style="text-align: center;">GitHub repo: <a href="https://github.com/ThomasDev-1/DelphiGameLauncher" target="_blank">https://github.com/ThomasDev-1/DelphiGameLauncher</a></p>
-		</div>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThomasDev - Game Launcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Oxanium', sans-serif;
+            background-color: #0b0c10;
+            color: #c5c6c7;
+			background-image: radial-gradient(circle, #1f2833, #0b0c10);
+        }
+        header {
+            background-color: #1f2833;
+            color: #66fcf1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 24px;
+        }
+        button {
+            background-color: #45a29e;
+            border: none;
+            color: #0b0c10;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #66fcf1;
+            transform: translateY(-5px);
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 36px;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #66fcf1;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        a {
+            color: #66fcf1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+		button {
+            height: 45px;
+            width: 200px;
+            font-size: 16px;
+            border: 2px solid #66fcf1;
+            border-radius: 5px;
+            background-color: #45a29e;
+            color: #0b0c10;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #66fcf1;
+            color: #0b0c10;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ThomasDev - Game Launcher</h1>
+        <div>
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='myprograms.html'">Back</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Delphi Game Launcher</h2>
+        <p>This is a Game Launcher that was made using Delphi 10.4. You can download the installer file <a href="https://github.com/ThomasDev-1/DelphiGameLauncher/raw/main/Delphi-Game-Launcher-SETUP.exe" target="_blank">here</a>, or get the full source code <a href="https://github.com/ThomasDev-1/DelphiGameLauncher/archive/refs/heads/main.zip" target="_blank">here</a>.</p>
+        <center><img src="images/launcher.png" alt="Screenshot of Delphi Game Launcher"></center>
+        <p style="text-align: center;">GitHub repo: <a href="https://github.com/ThomasDev-1/DelphiGameLauncher" target="_blank">https://github.com/ThomasDev-1/DelphiGameLauncher</a></p>
+    </div>
+</body>
 </html>

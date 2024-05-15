@@ -1,155 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Thomas Dev - About Me </title>
-	
-	
-	<style>
-		body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			background-image: url("images/background.jpg");
-			font-family: Fantasy;
-			font-size: 25px;
-			line-height: 1.6;
-			color: #333;
-			text-align: center;
-		}
-		
-		h1 {
-			font-size: 50px;
-			font-weight: bold;
-			margin-top: 50px;
-			margin-bottom: 20px;
-		}
-		
-		.image-container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 40px;
-		}
-		
-		.image-container img {
-			height: 100px;
-			margin-right: 20px;
-		}
-		
-		a {
-			color: #007bff;
-			text-decoration: none;
-		}
-		
-		a:hover {
-			color: #0056b3;
-			text-decoration: underline;
-		}
-		
-		button {
-			background-color: #007bff;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			font-size: 18px;
-			cursor: pointer;
-			margin-right: 10px;
-			margin-bottom: 20px;
-			transition: all 0.3s ease-in-out;
-			}
-		button:hover {
-			background-color: #388E3C;
-			transform: translateY(-5px);
-		}
-		
-		button:focus {
-			outline: none;
-		}
-		
-		header {
-				background-color: #333;
-				color: white;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 10px;
-				max-height: 50px;
-			}
-			
-			header h1 {
-				margin: 0;
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			}
-			
-			header button {
-				background-color: #4CAF50;
-				border: none;
-				color: white;
-				padding: 10px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				margin: 4px 2px;
-				cursor: pointer;
-			}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Dev - About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0c10;
+            font-family: 'Oxanium', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #c5c6c7;
+            text-align: center;
+            background-image: radial-gradient(circle, #1f2833, #0b0c10);
+        }
+        h1, h2 {
+            text-align: center;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .image-container img {
+            height: 100px;
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+        a {
+            color: #66fcf1;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #45a29e;
+            text-decoration: underline;
+        }
+        button {
+            background-color: #45a29e;
+            color: #0b0c10;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #66fcf1;
+            color: #0b0c10;
+            transform: translateY(-5px);
+        }
+        button:focus {
+            outline: none;
+        }
+        header {
+            background-color: #1f2833;
+            color: #c5c6c7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        button {
+            height: 45px;
+            width: 200px;
+            font-size: 16px;
+            border: 2px solid #66fcf1;
+            border-radius: 5px;
+            background-color: #45a29e;
+            color: #0b0c10;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #66fcf1;
+            color: #0b0c10;
+            transform: translateY(-5px);
+        }
+        .content {
+            font-size: 18px;
+            text-align: center;
+            padding: 80px 50px 50px;
+        }
+    </style>
 </head>
-	<body>
+<body>
+    <header>
+        <h1 onclick="window.location.href='index.html'">ThomasDev</h1>
+        <button onclick="window.location.href='index.html'">Home</button>
+    </header>
+    <div class="content">
+        <h1>About Me</h1>
+        <div>
+            Hello there! My name is Thomas, but online I go as ThomasDev. I'm a high school student from South Africa with a passion for software development and technology.
+        </div>
+        <div class="image-container">
+            <img src="images/southafrica.jpg" alt="South Africa">
+        </div>
+        <div>
+            I discovered my love for programming at around 12 years old and I've been hooked ever since. My first foray into the programming world was with Unity and C#, which I used to create my very first games. None of these games have been completed or published, but this inspired me to continue learning and expand my knowledge as much as possible.
+        </div>
+        <br/>
+        <div>
+            Over time, I expanded my programming skillset to include other languages such as Java, Python, and Delphi. I found that learning these new languages not only helped me to become a better programmer, but it also opened up new opportunities for me to explore different areas of technology.
+        </div>
+        <div class="image-container">
+            <img src="images/csharp_logo.png" alt="C# Logo">
+            <img src="images/unity.png" alt="Unity Logo">
+            <img src="images/java.png" alt="Java Logo">
+            <img src="images/python.png" alt="Python Logo">
 
-		<header>
-				<h1></h1>
-				<h1>ThomasDev - About me</h1>
-				<div>
-					<button onclick="window.location.href='index.html'">Home</button>
-				</div>
-			</header>
-			
-		<br/>
-
-		<div style="font-size: 25px; text-align: center; padding: 0 50px;">
-		Hello there! My name is Thomas, but online I go as ThomasDev. I'm a high school student from South Afrca that has a passion for software development and technology.
-		</div>
-		
-		<center><image src="images/southafrica.jpg" height="60"/></center>
-		
-		<div style="font-size: 25px; text-align: center; padding: 0 50px;">
-		I discovered my love for programming at around 12 years old and I've been hooked ever since. My first foray into the programming world was with Unity and C#, which I used to create my very first games. None of these games have been completed or published, but this inspired me to continue learning and expand my knowledge as much as possible.
-		</div>
-		<br/>
-		
-		<div style="font-size: 25px; text-align: center; padding: 0 50px;">
-		Over time, I expanded my programming skillset to include other languages such as Java, Python, and Delphi. I found that learning these new languages not only helped me to become a better programmer, but it also opened up new opportunities for me to explore different areas of technology.
-		</div>
-		
-		<style>
-		  .image-container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		  }
-		</style>
-
-		<div class="image-container">
-		  <img src="images/csharp_logo.png" height="100">
-		  <img src="images/unity.png" height="100">
-		  <img src="images/java.png" height="100">
-		  <img src="images/python.png" height="100">
-		  <img src="images/delphi.png" height="100">
-		</div>
-		
-		<div style="font-size: 25px; text-align: center; padding: 0 50px;">
-		I've spent countless hours working on personal projects, experimenting with different tools and techniques to create software that is not only functional but also aesthetically pleasing. My passion for programming has also led me to start a <a href="Blog.html">blog</a>, where I share my thoughts and experiences with other like-minded individuals.
-		</div>
-		<br/>
-		
-		<div style="font-size: 25px; text-align: center; padding: 0 50px;">
-		So that's a bit about me! I hope you enjoyed learning more about my background and interests. Feel free to check out my blog to keep up with my latest projects and musings. Thanks for stopping by!
-		</div>
-		
-		<br/>
-		<br/>
-		
-	</body>
+        </div>
+        <div>
+            I've spent countless hours working on personal projects, experimenting with different tools and techniques to create software that is not only functional but also aesthetically pleasing. My passion for programming has also led me to start a <a href="blog.html">blog</a>, where I share my thoughts and experiences with other like-minded individuals.
+        </div>
+        <br/>
+        <div>
+            So that's a bit about me! I hope you enjoyed learning more about my background and interests. Feel free to check out my blog to keep up with my latest projects and musings. Thanks for stopping by!
+        </div>
+    </div>
+</body>
 </html>

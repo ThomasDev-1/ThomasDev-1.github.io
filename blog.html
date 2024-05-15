@@ -1,182 +1,171 @@
-<html>
-	<title>ThomasDev - My blog</title>
-	
-	<style>
-	h1 {
-		font-size: 50px;
-		text-align: center;
-		font-family: 'Fantasy';
-		font-weight: 700;
-		margin-top: 50px;
-	}
-	</style>
-	
-	<body>
-	<header>
-			<h1></h1>
-			<h1>ThomasDev - My blog</h1>
-			<div>
-				<button onclick="window.location.href='index.html'">Home</button>
-			</div>
-		</header>
-		</body>
-			
-		<br/>
-	
-	<center>
-		<div style="max-width: 800px;">
-			<style>
-			body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			background-image: url("images/background.jpg");
-			background-size: 100000%;
-			font-family: Fantasy;
-			font-size: 25px;
-			line-height: 1.6;
-			color: #333;
-			text-align: center;
-			}
-		
-			.blog-post {
-			  display: inline-table;
-			  flex-direction: column;
-			  align-items: center;
-			  justify-content: center;
-			  margin-bottom: 20px;
-			  border: 1px solid #ccc;
-			  padding: 10px;
-			  border-radius: 15px;
-			  box-sizing: border-box;
-			  max-width: 50%;
-			  background-color: white;
-			  cursor: pointer;
-			}
-			.blog-post:hover {
-			  background-color: #f1f1f1; /* set a different background color on hover */
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThomasDev - My blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0c10;
+            font-family: 'Oxanium', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #c5c6c7;
+            text-align: center;
+            background-image: radial-gradient(circle, #1f2833, #0b0c10);
+        }
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 100px; /* Adjusted for fixed header */
+            color: #66fcf1;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        button {
+            background-color: #45a29e;
+            color: #0b0c10;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #66fcf1;
+            transform: translateY(-5px);
+        }
+        .blog-post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+            border: 2px solid #66fcf1;
+            padding: 20px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            max-width: 300px;
+            height: 500px; /* Set a fixed height */
+            background-color: #1f2833;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            text-align: center;
+            overflow: hidden; /* Handle overflow content */
+        }
+        .blog-post:hover {
+            background-color: #0b0c10;
+        }
+        .blog-post img {
+            max-width: 100%;
+            height: 180px; /* Set a fixed height for images */
+            width: auto;
+            margin: 0 auto 20px;
+            border-radius: 5px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        .blog-post-link {
+            text-decoration: none;
+            color: #c5c6c7;
+            display: block;
+        }
+        .blog-post-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .blog-post-summary, .blog-post-date {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background: #66fcf1;
+            width: 60%;
+            margin: 40px auto;
+        }
+        header {
+            background-color: #1f2833;
+            color: #c5c6c7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        button {
+            height: 45px;
+            width: 200px;
+            font-size: 16px;
+            border: 2px solid #66fcf1;
+            border-radius: 5px;
+            background-color: #45a29e;
+            color: #0b0c10;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #66fcf1;
+            color: #0b0c10;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 onclick="window.location.href='index.html'">ThomasDev</h1>
+        <div>
+            <button onclick="window.location.href='index.html'">Home</button>
+        </div>
+    </header>
 
-			.blog-post img {
-			  max-width: 100%;
-			  height: auto;
-			  margin: auto;
-			  margin-bottom: 20px;
-			  border-radius: 5px;
-			  box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
-			}
-			
-			.blog-post-link {
-			  text-decoration: none;
-			  color: black;
-			}
-
-			.blog-post-content {
-			  display: flex;
-			  flex-direction: column;
-			  justify-content: center;
-			  align-items: center;
-			  text-align: center;
-			}
-
-			.blog-post-title {
-			  font-size: 28px;
-			  font-weight: bold;
-			  margin-bottom: 10px;
-			  font-family: 'Roboto', sans-serif;
-			  text-transform: uppercase;
-			}
-
-			.blog-post-summary {
-			  font-size: 16px;
-			  margin-bottom: 10px;
-			  text-align: left;
-			  padding: 10px;
-			  font-family: 'Roboto', sans-serif;
-			  color: #666;
-			}
-
-			.blog-post-date {
-			  font-size: 14px;
-			  margin-top: 10px;
-			  color: #999;
-			  font-family: 'Roboto', sans-serif;
-			}
-			
-			button {
-			background-color: #007bff;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			font-size: 18px;
-			cursor: pointer;
-			margin-right: 10px;
-			margin-bottom: 20px;
-			transition: all 0.3s ease-in-out;
-			}
-			button:hover {
-				background-color: #388E3C;
-				transform: translateY(-5px);
-			}
-			
-			button:focus {
-				outline: none;
-			}
-			
-			header {
-				background-color: #333;
-				color: white;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 10px;
-				max-height: 50px;
-			}
-			
-			header h1 {
-				margin: 0;
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			}
-			
-			header button {
-				background-color: #4CAF50;
-				border: none;
-				color: white;
-				padding: 10px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				margin: 4px 2px;
-				cursor: pointer;
-			}
-			
-			</style>
-			
-			<a href="blog/blogpost2.html" class="blog-post-link">
-				<div class="blog-post">
-				  <img src="blog/chessai.png" alt="Blog Post Image">
-				  <div class="blog-post-content">
-					<h2 class="blog-post-title">My chess AI</h2>
-					<p class="blog-post-summary">My journey in attempting to write my own ChessAI</p>
-					<p class="blog-post-date">07/10/2023</p>
-				  </div>
-				</div>
-			</a>
-			<a href="blog/blogpost1.html" class="blog-post-link">
-				<div class="blog-post">
-				  <img src="blog/firstpost.jpg" alt="Blog Post Image">
-				  <div class="blog-post-content">
-					<h2 class="blog-post-title">My first blog post</h2>
-					<p class="blog-post-summary">This is the first blog post to be created on this site! Read here how I set up the site and got it up and running.</p>
-					<p class="blog-post-date">04/22/2023</p>
-				  </div>
-				</div>
-			</a>
-			
-		</div>
-	</center>
-	
-
+    <h1>ThomasDev - My blog</h1>
+    <div class="container">
+        <a href="blog/blogpost2.html" class="blog-post-link">
+            <div class="blog-post">
+                <img src="blog/chessai.png" alt="Blog Post Image">
+                <div class="blog-post-content">
+                    <h2 class="blog-post-title">My Chess AI</h2>
+                    <p class="blog-post-summary">My journey in attempting to write my own Chess AI</p>
+                    <p class="blog-post-date">07/10/2023</p>
+                </div>
+            </div>
+        </a>
+        <a href="blog/blogpost1.html" class="blog-post-link">
+            <div class="blog-post">
+                <img src="blog/firstpost.jpg" alt="Blog Post Image">
+                <div class="blog-post-content">
+                    <h2 class="blog-post-title">My First Blog Post</h2>
+                    <p class="blog-post-summary">This is the first blog post to be created on this site! Read here how I set up the site and got it up and running.</p>
+                    <p class="blog-post-date">04/22/2023</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
 </html>
