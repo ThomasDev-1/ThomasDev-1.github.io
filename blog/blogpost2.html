@@ -1,0 +1,187 @@
+<html>
+<title>ThomasDev - My ChessAI</title>
+	
+	<style>
+	h1 {
+		font-size: 50px;
+		text-align: center;
+		font-family: 'Fantasy';
+		font-weight: 700;
+		margin-top: 50px;
+	}
+	</style>
+	
+	<body>
+	<header>
+			<h1></h1>
+			<h1>ThomasDev - My Chess AI</h1>
+			<div>
+				<button onclick="window.location.href='../Index.html'">Home</button>
+				<button onclick="window.location.href='../Blog.html'">Back</button>
+			</div>
+		</header>
+		</body>
+			
+		<br/>
+	
+	<center>
+		<div style="max-width: 800px;">
+			<style>
+			body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-image: url("../Images/background.jpg");
+			background-repeat: no-repeat;
+			background-size: auto 1000%;
+			font-family: Fantasy;
+			font-size: 25px;
+			line-height: 1.6;
+			color: #333;
+			text-align: center;
+			}
+		
+			.blog-post {
+			  display: inline-table;
+			  flex-direction: column;
+			  align-items: center;
+			  justify-content: center;
+			  margin-bottom: 20px;
+			  border: 1px solid #ccc;
+			  padding: 10px;
+			  border-radius: 15px;
+			  box-sizing: border-box;
+			  max-width: 100%;
+			  background-color: white;
+			  cursor: pointer;
+			}
+
+			.blog-post img {
+			  max-width: 100%;
+			  height: auto;
+			  margin: auto;
+			  margin-bottom: 20px;
+			  border-radius: 5px;
+			  box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+			}
+			
+			.blog-post-link {
+			  text-decoration: none;
+			  color: black;
+			}
+
+			.blog-post-content {
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  text-align: center;
+			}
+
+			.blog-post-title {
+			  font-size: 28px;
+			  font-weight: bold;
+			  margin-bottom: 10px;
+			  font-family: 'Roboto', sans-serif;
+			  text-transform: uppercase;
+			}
+
+			.blog-post-summary {
+			  font-size: 16px;
+			  margin-bottom: 10px;
+			  text-align: left;
+			  padding: 10px;
+			  font-family: 'Roboto', sans-serif;
+			  color: #666;
+			}
+
+			.blog-post-date {
+			  font-size: 14px;
+			  margin-top: 10px;
+			  color: #999;
+			  font-family: 'Roboto', sans-serif;
+			}
+				
+			button {
+				font-size: 18px;
+				border: none;
+				border-radius: 5px;
+				background-color: #4CAF50;
+				color: white;
+				font-weight: bold;
+				cursor: pointer;
+				transition: all 0.3s ease-in-out;
+			}
+			button:hover {
+				background-color: #388E3C;
+				transform: translateY(-5px);
+			}
+			
+			button:focus {
+				outline: none;
+			}
+			
+			header {
+				background-color: #333;
+				color: white;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 10px;
+				max-height: 50px;
+			}
+			
+			header h1 {
+				margin: 0;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			
+			header button {
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+			
+			</style>
+		
+				<div class="blog-post">
+					<h2 class="blog-post-title">My Chess AI</h2>
+				  <img src="chessAI.png" alt="Blog Post Image">
+				  <div class="blog-post-content">
+					
+					<p class="blog-post-summary">My journey in attempting to write my own ChessAI</p>
+					<p>I spoke about this in the first post on this site, and today I am going to go into more depth about it. Since I was about 8 years old, I have always enjoyed playing Chess. That, in combination with my passion for programming, soon lead me down the rabbit hole of Chess AIs and chess Engines. I became facinated about how engines such as Stockfish, Alpha Zero and Deep Blue worked. So, I started writing my own Chess AI
+					<br/>
+					Now, at this time, I was not still quite new to programming, and was mainly relying on stuff like Chat-GPT to help. But I was still determined to create my OWN chess AI. After about 2 weeks of working on it, I had a program that was able to make moves on the board. Terrible moves, to be specific. But it was able to make moves nonetheless.
+					<br/>
+					<br/>
+					After countless hours of trying to improve the AI and make it actually play better moves, I gave up. It just seemed impossible to do. Atleast, it was at the time...
+					<br/>
+					<br/>
+					When I wrote the original AI, I was using a language called C# because it was the one that I was most familiar with. However, I soon found out that it was most definatly not the best language to start out with for this project. You see, chess is an intriquite game. And having to write the rules / logic for all the moves, all the pieces and everything on the board (including stuff like en-passant, castling and promotion) is not very easy. That is actually what took the most amount of time, and is what ultimatly wasnt working properally at the end and lead me to giving up. So, a few months later; I tried again. This time, I used a different language. Python.
+					<br/>
+					Python was far more suited for this task. There was a library that I installed called Python-Chess (quite a suiting name) which helped me with all the backend stuff of the engine. After less than 5 hours of work, I had a working chess engine that could play (equally as bad) moves on the board. It was at this point where I started to do some research. I stumbled across an algorythem called "Minimax", now explaining how Minimax works will take forever, so I'll just cover the basics:
+					<br/>
+					In a game of chess, each move the players who's move it has has many different choices to make. After each one, the opponent has many choices, and so on so forth. The minimax function will first make every move that is possible for white (on new boards, seperate to the one that is actually being played on). It will then repeat this process over and over until a certain depth. Once it has made x amount of moves for each play, it uses an evaluation function to assign a value to the board. The evaluation function will measure many things, what pieces are on the board, where the peices are placed, how safe if the king. etc. etc. If it is an equal position, the eval will return 0, if black is winning, it will go into the negatives and if white is winning it will go into the positives. This will be repeated up the line until the current position is reached. The function assumes that each player will make the move that returns the best value for them. Meaning, if it is whites turn, they will maximize the score (get the highest value), and if it is blacks turn they will minimize the score (get the lowest value). Hence the name: minimax. 
+					<br/>
+					We can use this function to determin what the best move is to make at any time. However, it is limited by 2 things; 1- The evalution function and how accurate it is. And 2- The depth that we search at. The latter of which is controlled by how powerful our computers are, and how long we are willing to wait for the AI to play a move. A good starting point for an AI is a depth of around 10. My AI could go to a depth of around 2... Not very good. And it took me nearly 2 weeks to find out that this was not my fault, the library I was using was slow. Meaning at a depth of 2, it would take about 3-4 seconds to make a move, but at a depth of 6 it would take over FIVE MINUTES. And no matter what I did, I could not fix this; as I was not the one that wrote the library.
+					<br/>
+					<br/>
+					So, after all my efforts, I was ultimatly limited by the library that I was using. And there was nothing I could do about it; apart from write it all from scratch. However, there is one last hope. Java. There is a java library called chesslib. Written by a user named bhlangonijr on Github. I am going to be attempting to use this library to write my AI as I believe it is far faster than the python on.
+					<br/>
+					Now that you are all caught up, I will be sure to post an update soon about the progress of my AI and how it is working as soon as I get some progress done.
+					</p>
+					<p class="blog-post-date">10/07/2023</p>
+				  </div>
+				</div>
+		</div>
+	</center>
+	
+</html>
