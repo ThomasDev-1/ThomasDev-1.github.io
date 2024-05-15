@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ThomasDev - My programs</title>
+	
+	<style>
+		body {
+			height: 100%;
+			background-image: url("Images/ProgramsBackground.png");
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-size: auto 250%;
+			position: relative;
+		}
+
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+
+		.title {
+			font-size: 48px;
+			font-weight: bold;
+			text-align: center;
+			margin: 0 0 30px;
+			color: #fff;
+			text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+			text-transform: uppercase;
+			text-shadow: 2px 2px #007bff;
+		}
+
+		.btn-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			margin-top: 50px;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 12px 20px;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			text-transform: uppercase;
+			background-color: #fff;
+			color: #333;
+			border: none;
+			border-radius: 4px;
+			box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.btn:hover {
+			transform: scale(1.1);
+			box-shadow: 4px 4px 6px rgba(0,0,0,0.6);
+		}
+		
+		button {
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			margin-right: 10px;
+			margin-bottom: 20px;
+			transition: all 0.3s ease-in-out;
+			}
+			
+		button:hover {
+			background-color: #388E3C;
+			transform: translateY(-5px);
+		}
+		
+		button:focus {
+			outline: none;
+		}
+		
+		header {
+				background-color: #333;
+				color: white;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 10px;
+			}
+			
+			header h1 {
+				margin: 0;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			
+			header button {
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+	</style>
+</head>
+<body>
+	<header>
+			<h1></h1>
+			<h1>ThomasDev</h1>
+			<div>
+				<button onclick="window.location.href='Index.html'">Home</button>
+			</div>
+		</header>
+		
+	<div class="container">
+		<h1 class="title">My Programs</h1>
+	
+		<div class="btn-container">
+			<button class="btn" onclick="window.location.href='FlappyBird.html'">FlappyBird</button>
+			<button class="btn" onclick="window.location.href='GameLauncher.html'">GameLauncher</button>
+		</div>
+	</div>
+</body>
+</html>
