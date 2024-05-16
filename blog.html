@@ -19,33 +19,29 @@
             text-align: center;
             background-image: radial-gradient(circle, #1f2833, #0b0c10);
         }
-        h1 {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 36px;
-            font-weight: 700;
-            margin-top: 100px; /* Adjusted for fixed header */
-            color: #66fcf1;
-        }
         .container {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            margin: 20px auto;
-            max-width: 1200px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 20px;
         }
         button {
+            height: 45px;
+            width: 200px;
+            font-size: 16px;
+            border: 2px solid #66fcf1;
+            border-radius: 5px;
             background-color: #45a29e;
             color: #0b0c10;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
-            margin: 20px 10px;
             transition: all 0.3s ease-in-out;
         }
         button:hover {
             background-color: #66fcf1;
+            color: #0b0c10;
             transform: translateY(-5px);
         }
         .blog-post {
@@ -98,6 +94,37 @@
             width: 60%;
             margin: 40px auto;
         }
+		button {
+            height: 45px;
+            width: 200px;
+            font-size: 16px;
+            border: 2px solid #66fcf1;
+            border-radius: 5px;
+            background-color: #45a29e;
+            color: #0b0c10;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #66fcf1;
+            color: #0b0c10;
+            transform: translateY(-5px);
+        }
+        h1, h2 {
+            text-align: center;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+        }
+        h1 {
+            font-size: 38px;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 14px;
+            margin-bottom: 50px;
+        }
         header {
             background-color: #1f2833;
             color: #c5c6c7;
@@ -113,7 +140,6 @@
         }
         header h1 {
             margin: 0;
-            font-family: 'Press Start 2P', cursive;
             font-size: 24px;
             cursor: pointer;
         }
@@ -139,9 +165,7 @@
 <body>
     <header>
         <h1 onclick="window.location.href='index.html'">ThomasDev</h1>
-        <div>
-            <button onclick="window.location.href='index.html'">Home</button>
-        </div>
+        <button onclick="window.location.href='index.html'">Home</button>
     </header>
 
     <h1>ThomasDev - My blog</h1>

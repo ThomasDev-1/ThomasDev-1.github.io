@@ -18,16 +18,22 @@
         }
         header {
             background-color: #1f2833;
-            color: #66fcf1;
+            color: #c5c6c7;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
         }
         header h1 {
             margin: 0;
-            font-family: 'Press Start 2P', cursive;
             font-size: 24px;
+			font-family: 'Press Start 2P', cursive;
+            cursor: pointer;
         }
         button {
             height: 45px;
@@ -55,7 +61,8 @@
             padding: 20px;
         }
         .title {
-            font-size: 48px;
+            font-size: 38px;
+			font-family: 'Press Start 2P', cursive;
             font-weight: bold;
             text-align: center;
             margin: 0 0 30px;
@@ -74,15 +81,19 @@
     </style>
 </head>
 <body>
+<br/>
+<br/>
+<br/>
+<br/>
     <header>
-        <h1>ThomasDev</h1>
+        <h1 onclick="window.location.href='index.html'">ThomasDev</h1>
         <div>
             <button onclick="window.location.href='index.html'">Home</button>
         </div>
     </header>
     
     <div class="container">
-        <h1 class="title">My Programs</h1>
+        <h2 class="title">My Programs</h2>
     
         <div class="btn-container">
             <button onclick="window.location.href='flappybird.html'">FlappyBird</button>
