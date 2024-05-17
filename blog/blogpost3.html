@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThomasDev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+			body {
+            background-color: #0b0c10;
+            margin: 0;
+            padding: 0;
+            font-family: 'Oxanium', sans-serif;
+            color: #c5c6c7;
+            background-image: radial-gradient(circle, #1f2833, #0b0c10);
+        }
+		
+		.blog-post {
+		  display: inline-table;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  margin-bottom: 20px;
+		  border: 1px solid #ccc;
+		  padding: 10px;
+		  border-radius: 15px;
+		  box-sizing: border-box;
+		  max-width: 100%;
+		  background-color: #0b0c10;
+		  cursor: pointer;
+		}
+
+		.blog-post img {
+		  max-width: 100%;
+		  height: auto;
+		  margin: auto;
+		  margin-bottom: 20px;
+		  border-radius: 5px;
+		  box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+		}
+		
+		.blog-post-link {
+		  text-decoration: none;
+		  color: black;
+		}
+
+		.blog-post-content {
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+		  background-color: #0b0c10;
+		}
+
+		.blog-post-title {
+		  font-size: 28px;
+		  font-weight: bold;
+		  margin-bottom: 10px;
+		  font-family: 'Press Start 2P', cursive;
+		  text-transform: uppercase;
+		}
+
+		.blog-post-summary {
+		  font-size: 22px;
+		  margin-bottom: 10px;
+		  text-align: left;
+		  padding: 10px;
+		  font-family: 'Oxanium', sans-serif;
+		  color: #c5c6c7;
+		}
+
+		.blog-post-date {
+		  font-size: 14px;
+		  margin-top: 10px;
+		  color: #c5c6c7;
+		  font-family: 'Roboto', sans-serif;
+		}
+			
+		button {
+			height: 45px;
+			width: 200px;
+			font-size: 16px;
+			border: 2px solid #66fcf1;
+			border-radius: 5px;
+			background-color: #45a29e;
+			color: #0b0c10;
+			font-weight: bold;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #66fcf1;
+            color: #0b0c10;
+            transform: translateY(-5px);
+        }
+        }
+        h1 {
+            font-size: 38px;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 14px;
+            margin-bottom: 50px;
+        }
+			
+			header {
+            background-color: #1f2833;
+            color: #c5c6c7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            cursor: pointer;
+        }
+		
+			
+	</style>
+	
+	<body>
+	<header>
+        <button onclick="window.location.href='../blog.html'">Back</button>
+    </header>
+		</body>
+			
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	
+	<center>
+	<div style="max-width: 800px;">
+	
+			<div class="blog-post">
+					<h2 class="blog-post-title">My Chess AI Part 2</h2>
+				  <img src="chess.gif" alt="Blog Post Image">
+				  <div class="blog-post-content">
+					
+					<p class="blog-post-summary">My journey in attempting to write my own Chess AI Part 2.</p>
+					<p>
+						Since the age of 8, I have loved to play Chess. I did it very often in my free time, and have spent countless hours studying the game and toning in my skills. This has (unfortunatly) lead to me only achieve a meer 1200 elo on chess.com, which places me just above the average player. So, I am by no means a good player, and compared to others, am pretty trash. However, for the past 5 years I have been studying programming and computer sciences which  have lead me to develope a very particular set of skills, skills that I have acquired over a very long--...
+						<br/>
+						<br/>
+						So I did what any good programmer would do, I wrote a program to do what I am bad at doing... Now, for this to work I needed a basis to work on. Luckely for me, there is this (really good) Youtuber named <a href="https://www.youtube.com/c/SebastianLague" target="_blank">Sebastian Lague</a> who was (at the time) hosting a <a href="https://youtu.be/iScy18pVR58?si=0x5mftVU6nc9aqmf" target="_blank">'tiny chess coding challange'</a>. This was perfect, since the challange was done in C#, and all of the difficult chess-based stuff had already been sorted for me. I jumped at this opportunity and began work on my new project...
+						<br/>
+						<br/>
+						For those of you who have never made a chess engine before, or have never even looked at how they work at all; here is a brief break down. The base (and
+						most popular form) of most chess engines is an algorithm called MiniMax (we will be using NegaMax, but I will talk about that later). The idea is pretty simple 
+						in practice: first, make a clone of the current board, and decide whos turn it is. Play out every possible move on the board for that player,
+						onto a new board clone. Repeat this for every possible move for black, on all of these new boards. Repeat this process until a certain 'depth' (simply the number
+						of times you itterate this process). We must then have an evaluation function that will grant a score value to each final board. This function is the most important, it
+						must decide which player is currently winning in any position, as well as how good of a position they have. A score of 0 means that the game is dead drawn, a negative
+						score means that black is winning, and a positive score means that white is winning. We must then work our way backwards through all possible moves, assuming that
+						the player whos turn it is will attempt to maximize (or minimize if they are playing black) their score. Hence the name, MiniMax. We can then chose the branch of moves
+						that leads to the highest possible score for the color that we are playing as. This means, that the higher our depth is, the better the engine will be.
+						<br/>
+						<br/>
+						The performance of our engine is hugely dependant on 1 our evaluation function, and 2 our computers capabilities (since going to higher depths will take more
+						processing power). Now Seb has set us up with a pretty good starting point for our engine, we are able to get a list of possible moves on the board, make and 
+						destroy new boards, and play out moves on the board (along with much more). This gave me a headstart on my engine, allowing me to focus on what is actually important;
+						the engine itsself (duh). I started off using the MiniMax function, which worked pretty well. But for the purpose of this challange, we are required to compress the engine
+						to be as small as possible. Therefore I switched to a simpler (yet more efficient) function known as NegaMax (same as MiniMax, but instead of generating a score for 
+						each possible player, we just get one score and negate the number if we are playing as black). This, along with a pretty simple evaluation function, allowed my bot to run
+						at a depth of about 5 before requiring a huge amount of time to make moves. We have maximize the depth by determining how much time we have per move (take the time
+						we have for the full game, and divide by the average number of moves in a game, 60) and start our search at a depth of 1, then increase it to 2, then 3, etc. until our 
+						time-per-move is up. This ensures that we are using our time as efficiency as possible. (this is known as itterative depth). 
+						<br/>
+						<br/>
+						I later joined a discord server dedicated to this coding challange, and learnt a ton about how these engines work to be more and more efficient. Things like pruning, tablebases
+						and HiLow cutoffs can all improve the depth of the engine by speeding up the search. I slowly improved the engine over time managing to get it to a depth of around 15.
+						The engine is by no means good, when compared to others that entered the competition, but is pretty good for my first real attempt. I ended up not even being featured
+						in the competition video because of how low I placed (kinda expected) but it was definatly a good learning time. If you would like to download the source code for my bot
+						and see how it works, you can check it out <a href="https://github.com/ThomasDev-1/GhostEngine" target="_blank">here</a> or if you would like to try your hand at making your own, take a look at <a href="https://www.youtube.com/c/SebastianLague" target="_blank">Sebs channel</a> to get access to the resources
+						to attempt your own bot.
+					</p>
+					<p class="blog-post-date">05/17/2023</p>
+				  </div>
+				</div>
+	</div>
+	</center>
+	
+</html>
